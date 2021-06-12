@@ -102,6 +102,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view)
     {
+        if(textView.getText().toString().equals("0"))
+        {
+         textView.setText("");
+        }
         switch (view.getId())
         {
             case R.id.button_zero:
